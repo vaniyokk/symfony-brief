@@ -1,0 +1,11 @@
+<?php
+
+use Symfony\Component\Console\Application;
+
+require __DIR__.'/vendor/autoload.php'; //include all autoloaded classes
+
+$app = new Application('Example console application', 'v1.0');
+
+$app->add(new PrintCommand);
+
+$app->run();
